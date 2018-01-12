@@ -1,0 +1,26 @@
+#这是练习用的，向屏幕输出‘我是???’.
+'''
+print ('hello word')
+print ('hello hahahahahahahahahahahahahah')
+'''
+print ('我是爱玲')
+print ('我是宫本武藏')
+print ('我是鲁班')
+print ('我是赵云')
+print ('我是关羽')
+print ('我是妲己')
+print ('我是小乔')
+print ('我是大桥')
+#print ('我是张飞')
+print ('我是武则天')
+print ('我是墨子')
+print ('我是韩信')
+print ('我是曹操')
+print ('我是卢布')
+print ('我是黄忠')
+print ('我是孙斌') 
+print ('我是陈咬金')
+print ('我是东皇太一')
+print ('我是老子')
+print ('我是虞姬')
+

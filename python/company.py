@@ -1,0 +1,18 @@
+name = input ('你叫什么：')
+age = int(input ('你的年龄是：'))
+sex = input ('性别：')
+high = int(input('你的身高：'))
+werght = int(input('你的体重'))
+ID_number = int(input('请输入你的身份证号码：'))
+education = input ('请输入你的学历：')
+birthtay = input('你的生日是：')
+wife = input('你妻子的名字：')
+addres = input ('你的家庭地址：')
+phone_number = int(input('你的电话是什么：'))
+position = input('你在公司的职位是：')
+money = int(input('你的工资是多少：'))
+
+print('\n'*4+'*'*10+'\n')
+print('姓名:%s\n年龄:%d\n性别:%s\n身高:%d\n体重：%d\n身份证号码：%d\n学历：%s\n生日：%s\n家庭住址：%s\n电话：%d\n职位：%s\n工资：%d\n'%(name,age,sex,high,werght,ID_number,education,birthtay,addres,phone_number,position,money))
+print('*'*10)
+
