@@ -21,17 +21,14 @@ def begin():
 #增加
 def addcard():
 	dic = {}
-	while True:
-		name = input('请输入名字：')
-		age = input('请输入年龄：')
-		sex = input('请输入性别：')
-		work = input('请输入工作：')
-		address = input('请输入地址：')
-		dic = {'姓名':name,'年龄':age,'性别':sex,'工作':work,'地址':address}
-		list.append(dic)
-		print_card()
-		break
-
+	name = input('请输入名字：')
+	age = input('请输入年龄：')
+	sex = input('请输入性别：')
+	work = input('请输入工作：')
+	address = input('请输入地址：')
+	dic = {'姓名':name,'年龄':age,'性别':sex,'工作':work,'地址':address}
+	list.append(dic)
+	print_card()
 
 
 
