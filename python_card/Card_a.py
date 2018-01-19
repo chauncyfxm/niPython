@@ -26,9 +26,12 @@ def addcard():
 	sex = input('请输入性别：')
 	work = input('请输入工作：')
 	address = input('请输入地址：')
-	dic = {'姓名':name,'年龄':age,'性别':sex,'工作':work,'地址':address}
-	list.append(dic)
-	print_card()
+	if name != '' or age != '' or sex != '' or work != '' or address != '':
+		dic = {'姓名':name,'年龄':age,'性别':sex,'工作':work,'地址':address}
+		list.append(dic)
+		print_card()
+	else:
+		print('错误!')
 
 
 
@@ -62,12 +65,13 @@ def delcard():
 	name = input('请输入你要删除的名片组的姓名：')
 	for i in list:
 		for k,j in i.items():
-			if k == 'name' and j == name:
-				TempIndex = True 
+			if k == '姓名' and j == name:
+				TempIndex = 0 
 				TempIndex = list.index(i)
+				print(TempIndex)
 				list.pop(TempIndex)
 				print('删除后的内容是：')
-				
+				print_card()
 				break
 	return list
 
@@ -84,7 +88,6 @@ def rvise():
 	'''
 	while True:
 		oldValue = input('请输入要改的原有内容的姓名：')
-		print('你要修改的内容是：')
 		judge = False
 		for i in list:
 			for y,j in i.items():
@@ -97,6 +100,7 @@ def rvise():
 			break
 		else:
 			print('名片系统里没有这个内容,你重新输入吧!')
+		print('你要修改的内容是：')
 	value = input('请输入要新的内容：')
 	for i in list:
 		for y,j in i.items():
